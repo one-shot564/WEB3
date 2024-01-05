@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HotelBooking.Models.Booking> 
+
+<h2>Bookings</h2>
+
+<p>
+    <a href="@Url.Action("Create", "Bookings")">Create New Booking</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Booking Id</th>
+            <th>Room Id</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.Id</td>
+                <td>@booking.RoomId</td>
+                <td>@booking.StartDate.ToString("d")</td>
+                <td>@booking.EndDate.ToString("d")</td> 
+            </tr>
+        }
+    </tbody>
+</table>

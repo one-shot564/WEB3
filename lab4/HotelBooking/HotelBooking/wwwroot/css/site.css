@@ -1,0 +1,80 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px; /* Отступ от нижней части страницы для футера */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Шрифт для всего сайта */
+    background-color: #f4f4f4; /* Цвет фона для всего сайта */
+    color: #333; /* Цвет текста для всего сайта */
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Стиль фокуса с синим подсветом */
+}
+
+/* Стили для заголовков и текста */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Цвет заголовков */
+}
+
+p {
+    line-height: 1.6; /* Межстрочный интервал для параграфов */
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: #ffffff; /* Цвет фона для навигационной панели */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Тень для навигационной панели */
+}
+
+/* Стили для таблиц */
+.table {
+    background-color: #ffffff; /* Цвет фона для таблиц */
+}
+
+    .table th {
+        background-color: #f8f9fa; /* Цвет фона для заголовков таблицы */
+    }
+
+.table-hover tbody tr:hover {
+    background-color: #eaeaea; /* Цвет фона для строки таблицы при наведении */
+}
+
+/* Стили для кнопок */
+.btn-primary {
+    background-color: #0056b3; /* Цвет фона для основных кнопок */
+    border-color: #0056b3; /* Цвет границы для основных кнопок */
+}
+
+    .btn-primary:hover {
+        background-color: #004299; /* Цвет фона для основных кнопок при наведении */
+        border-color: #003580; /* Цвет границы для основных кнопок при наведении */
+    }
+
+/* Стили для футера */
+footer.footer {
+    background-color: #f8f9fa; /* Цвет фона для футера */
+    padding: 1rem 0; /* Отступы для футера */
+    text-align: center; /* Выравнивание текста футера */
+}
+
+/* Стили для форм */
+.form-control {
+    border-radius: 0.25rem; /* Скругление углов для элементов форм */
+    border: 1px solid #ced4da; /* Цвет границы для элементов форм */
+}
+
+/* Добавить пользовательские стили здесь */

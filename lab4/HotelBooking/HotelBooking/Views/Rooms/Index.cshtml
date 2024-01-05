@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HotelBooking.Models.Room>
+
+<h2>Rooms</h2>
+
+<p>
+    <a href="@Url.Action("Create", "Rooms")">Add New Room</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.Category</td>
+                <td>@room.Price</td>
+                <td>@room.IsAvailable ? "Available" : "Occupied"</td>
+            </tr>
+        }
+    </tbody>
+</table>
